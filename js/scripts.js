@@ -14,7 +14,16 @@ function add(number1, number2) {
   return number1 + number2;
   }
   
-  const number1 = parseInt(prompt("Enter a degree in celsius"));
-  //const number2 = parseInt(prompt("Enter another number:"));
-  const result= convertToFahrenheit(number1);
-  alert(result + " degrees fahrenheit");
+  const number1 = parseInt(prompt("Enter a number"));
+  const number2 = parseInt(prompt("Enter another number:"));
+  const result= add(number1, number2);
+  alert(result);
+
+  //User Interface
+
+  $(document).ready(function() {
+    const number1 = parseInt(prompt("Enter a number"));
+  const number2 = parseInt(prompt("Enter another number:"));
+  const result= add(number1, number2);
+  alert(result);
+  })
